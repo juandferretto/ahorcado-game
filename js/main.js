@@ -64,9 +64,9 @@ const putLetter = (arrayLetter, letter, target, word) => {
     if (amount != 7) {
         if (arrayLetter.length == 0) {
             const img = document.getElementById("hanged-img");
-            img.children[0].setAttribute('src', `../assets/${amount}.jpg`)
+            img.children[0].setAttribute('src', `./assets/${amount}.jpg`)
             img.children[0].style.display = 'block';
-            img.children[0].setAttribute('alt', '../assets/1.jpg')
+            img.children[0].setAttribute('alt', './assets/1.jpg')
             target.setAttribute('disabled', '');
             target.setAttribute('id', 'disabled');
             amount++;
