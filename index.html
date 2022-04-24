@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado - Game</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11" async></script>
+    <script src="./utilities/main.js" async></script>
+    <script src="./js/main.js" async></script>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <div id="center">
+            <div id="loader">
+                <p>Cargando...</p>
+            </div>
+            <div id="container-board">
+                <div id="title">
+                    <h2>Ahorcado Game - Juan Diego Ferretto</h2>
+                </div>
+                <div id="container-word">
+                    <h3>Palabra (países):</h3>
+                    <div id="word"></div>
+                </div>
+                <div id="hanged-img">
+                    <img>
+                </div>
+                <div id="container-letters"></div>
+            </div>
+        </div>
+
+        <div id="container-score">
+            <div id="score">
+                <h3>Puntaje:</h3>
+                <div id="number-score">0</div>
+            </div>
+            <div id="error">
+                <p>La letra elegida es incorrecta</p>
+            </div>
+            <div><button id="help">AYUDA</button></div>
+            <div id="flag"></div>
+        </div>
+    </div>
+</body>
+
+</html>
