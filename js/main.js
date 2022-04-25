@@ -42,7 +42,7 @@ const initGame = (word) => {
 
         const addEvent = document.querySelectorAll(".each-letter");
         addEvent.forEach(eventLetter => eventLetter.addEventListener("click", (e) => {
-            findIndexLetter(e, word.translations.spa.common);
+            findIndexLetter(e, normalizeWord(word.translations.spa.common));
         }))
     }
 }
@@ -123,6 +123,10 @@ const checkWin = (word) => {
 const helper = (flag) => {
     document.querySelector("#flag").innerHTML = `<img src="${flag.flags.png}" class="img-flag">`
     document.querySelector('#help').style.display = 'none';
+}
+
+const normalizeWord = (word) => {
+    return word.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
 
 const showButton = () => {
