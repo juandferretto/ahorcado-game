@@ -1,4 +1,4 @@
-# -Ahorcado - Game
+# -Ahorcado Game
 Aplicación web basada en el juego del ahorcado, donde debes elegir una letra y adivinar el país. En una determinada cantidad de intentos, pierdes. <br>
 
 # -Acerca del repositorio
