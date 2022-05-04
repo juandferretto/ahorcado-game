@@ -47,6 +47,7 @@ const initGame = (word) => {
     }
 }
 
+
 const findIndexLetter = (e, word) => {
     const target = e.target;
     const letter = target.name;
@@ -152,9 +153,11 @@ const preLoader = (condition) => {
     if (condition == "init") {
         document.getElementById('loader').style.display = 'flex';
         document.getElementById('container-board').style.display = 'none';
+        document.getElementById("help").style.display = 'none';
     } else {
         document.getElementById('loader').style.display = 'none';
         document.getElementById('container-board').style.display = 'flex';
+        document.getElementById("help").style.display = 'block';
     }
 }
 
